@@ -61,7 +61,6 @@ int main(void) {
   FILE* fptr = fopen("input.txt", "r");
 
   if (fptr == NULL) {
-    fclose(fptr);
     perror("File doesn't exist.");
     return 1;
   }
